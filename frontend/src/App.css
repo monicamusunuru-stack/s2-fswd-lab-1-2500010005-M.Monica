@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f5fa;
+    color: #263248;
+}
+
+.app {
+    min-height: 100vh;
+}
+
+header {
+    background: #253b80;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #dce5ff;
+}
+
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.form-section,
+.list-section {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #253b80;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccd3df;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3455a4;
+}
+
+button {
+    border: none;
+    padding: 11px 16px;
+    border-radius: 7px;
+    cursor: pointer;
+    background: #3455a4;
+    color: white;
+    font-size: 14px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+form button {
+    grid-column: span 2;
+}
+
+.cancel-btn {
+    background: #777;
+}
+
+.message {
+    margin-top: 15px;
+    color: #253b80;
+}
+
+.search {
+    margin-bottom: 20px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 750px;
+}
+
+th,
+td {
+    border-bottom: 1px solid #e1e5ec;
+    padding: 13px;
+    text-align: left;
+}
+
+th {
+    background: #edf1fa;
+    color: #253b80;
+}
+
+.edit-btn {
+    background: #e6a23c;
+    margin-right: 6px;
+}
+
+.delete-btn {
+    background: #d94b4b;
+}
+
+@media (max-width: 600px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    form button {
+        grid-column: span 1;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+
+    .form-section,
+    .list-section {
+        padding: 18px;
+    }
+}
